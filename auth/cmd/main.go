@@ -20,7 +20,6 @@ type server struct {
 	desc.UnimplementedAuthV1Server
 }
 
-// Get ...
 func (s *server) Get(ctx context.Context, req *desc.GetRequest) (*desc.GetResponse, error) {
 	log.Println("==============================")
 	log.Printf("User id: %d", req.GetId())
